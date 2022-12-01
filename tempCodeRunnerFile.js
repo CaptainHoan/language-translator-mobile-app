@@ -1,0 +1,1 @@
+m.indexOf(m[j])
