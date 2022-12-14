@@ -1,13 +1,13 @@
 # language-translator-mobile-app
-A language translating app like google translate written in javascript. The development focus on front-end side
+A language translating app like google translate written in javascript. The app development focuses on front-end side
 
 >
 
-![Alt text](assets/translate%20func.jpg) {width: 20px, height: 20 px}
+![Alt text](assets/translate%20func.jpg =50X50)
 
 > 
 Stack i use to develop the app
-- React native
+- React native (javascript)
 - Redux
 - Tailwind css (native-wind lib)
 - Apple authentication
