@@ -2,7 +2,7 @@
 A language translating app like google translate written in javascript. The app development focuses on front-end side
 
 >
-![main screen](assets/mainScreen.jpg){:height="50px" width="50px"}
+![main screen](assets/mainScreen.jpg) {:height="50px" width="50px"}
 
 
 > 
