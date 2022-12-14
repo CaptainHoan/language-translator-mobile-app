@@ -3,7 +3,7 @@ A language translating app like google translate written in javascript. The app 
 
 >
 
-![Alt text](assets/translate%20func.jpg =50X50)
+<img src="mainScreen.jpg" alt="main screen" width="50">
 
 > 
 Stack i use to develop the app
