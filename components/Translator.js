@@ -11,6 +11,7 @@ import {
 import { useNavigation } from '@react-navigation/native';
 import { useSelector } from 'react-redux';
 import { sourceLangSelector, targetLangSelector } from '../redux/LanguageSlice';
+import * as Speech from 'expo-speech';
 
 const Translator = () => {
 
@@ -84,6 +85,16 @@ const Translator = () => {
     }
   }, [input])
 
+  //function text to speech
+  const speakText = () => {
+    if(translatedText.length > 0) {
+      Speech.speak(translatedText, {
+        language: targetLang.split(" ").slice(-1).join()
+      });
+      console.log(Speech)
+    }
+  }
+
   return (
     <View>
       {/** TranslationPair containing sourceLanguage, swapIcon, targetLanguaga*/}
@@ -147,6 +158,7 @@ const Translator = () => {
       </View>
 
       {/**The translated texts go here */}
+
       <View className="m-2 bg-gray-900 p-2">
         <View className="flex-row items-center justify-between mb-6">
           <Text className="text-gray-600 text-base">{targetLang.split(" ").slice(0,1).join()}</Text>
@@ -157,7 +169,9 @@ const Translator = () => {
         <Text className="text-white text-lg mb-6">{translatedText}</Text>
 
         <View className="flex-row items-center justify-between">
-          <AntDesign name="sound" size={23} color="gray" />
+          <TouchableOpacity onPress={speakText}>
+            <AntDesign name="sound" size={23} color="gray" />
+          </TouchableOpacity>
           <View className="flex-row items-center justify-between space-x-3">
             <MaterialCommunityIcons name="progress-upload" size={24} color="gray" />
             <MaterialCommunityIcons name="fullscreen" size={24} color="gray" />
