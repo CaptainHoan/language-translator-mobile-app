@@ -17,6 +17,7 @@
     "@rneui/themed": "^4.0.0-rc.6",
     "expo": "~46.0.13",
     "expo-apple-authentication": "~4.3.0",
+    "expo-speech": "~10.3.0",
     "expo-status-bar": "~1.4.0",
     "google-translate-api": "^2.3.0",
     "google-translate-api-x": "^10.4.2",
