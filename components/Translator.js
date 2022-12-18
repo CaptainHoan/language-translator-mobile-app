@@ -151,8 +151,10 @@ const Translator = () => {
           <Text className="text-white">Camera</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity className="items-center">
-        <FontAwesome name="microphone" size={22} color="#8ED1FC" />
+        <TouchableOpacity className="items-center"
+          onPress={() => navigation.navigate('Recording')}
+        >
+          <FontAwesome name="microphone" size={22} color="#8ED1FC" />
           <Text className="text-white">Record</Text>
         </TouchableOpacity>
       </View>
