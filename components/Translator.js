@@ -13,7 +13,7 @@ import { useSelector } from 'react-redux';
 import { sourceLangSelector, targetLangSelector } from '../redux/LanguageSlice';
 import * as Speech from 'expo-speech';
 
-const Translator = () => {
+const Translator = ({camera, setCamera, startCamera}) => {
 
   const navigation = useNavigation();
   
@@ -95,6 +95,7 @@ const Translator = () => {
     }
   }
 
+
   return (
     <View>
       {/** TranslationPair containing sourceLanguage, swapIcon, targetLanguaga*/}
@@ -146,7 +147,9 @@ const Translator = () => {
 
       {/** TranslationOptions including camera and recording functionality*/}
       <View className="flex-row items-center justify-between px-20 border-gray-500 border-b-2 py-2 bg-gray-900">
-        <TouchableOpacity className="items-center">
+        <TouchableOpacity className="items-center"
+          onPress={startCamera}
+        >
           <Entypo name="camera" size={22} color="#8ED1FC" />
           <Text className="text-white">Camera</Text>
         </TouchableOpacity>
