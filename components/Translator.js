@@ -71,7 +71,6 @@ const Translator = ({camera, setCamera, startCamera}) => {
     body: encodedParamsJason
   };
 
-  
   const fetchGoogleTranslateAPI = () => {
     return fetch('https://cheap-translate.p.rapidapi.com/translate', options)
     .then(response => response.json())
