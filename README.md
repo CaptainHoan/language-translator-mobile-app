@@ -17,7 +17,7 @@ A language translating app like google translate written in javascript. The app 
 
 ### App features: 
 - Full language pairs translation including: arabic, bulgarian, chinese, czech, danish, dutch, english, esperanto, french, german, greek, hindi, italian, japanese, lao, russian, thai, vietnamese
-- Currently working on adding translating using camera and voice recording
+- Currently working on adding translating by camera and voice recording (using AI somehow, still get stuck lol)
 
 
 
