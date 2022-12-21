@@ -18,16 +18,13 @@ const HomeScreen = () => {
     }
   }
 
-  const takePicture = () => {
-    console.log('haha')
-  }
-
   return (
     camera 
       ? (
         <ExpoCamera 
           cameraView={cameraView}
-          takePicture={takePicture}
+          camera={camera}
+          setCamera={setCamera}
         />
       )
       : (
